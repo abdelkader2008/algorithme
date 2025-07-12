@@ -1,0 +1,26 @@
+ALGORITHM chckpoint.algo
+VAR
+    ch: STRING ;
+    n: INTEGER ;
+    i: INTEGER ;
+    e: INTEGER ;
+    v: INTEGER ;
+BEGIN
+    read(ch);
+    ch:= ch-p;
+    n := 0;
+    for i := 1 to length(ch) do
+        n := n+1;
+        if ch[i] = " " then
+            e := e+1;
+        end if;
+        if ch[i] in "aeuio" then
+            v := v+1;
+        end if;
+    end for
+    write(n);
+    write(e);
+    write(v);
+
+
+END
