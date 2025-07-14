@@ -15,7 +15,7 @@ BEGIN
         if ch[i] = " " then
             e := e+1;
         end if;
-        if ch[i] in "aeuio" then
+        if (tolower(ch[i]) in "aeuio") then
             v := v+1;
         end if;
     end for
