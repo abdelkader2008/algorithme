@@ -9,8 +9,8 @@ BEGIN
     read(ch);
     e :=1;
     v := 0;
-    n := 0;
-    for i := 1 to length(ch) do
+    n := 0; 
+    for i := 0 to (ch.length-1) do
         n := n+1;
         if ch[i] = " " then
             e := e+1;
